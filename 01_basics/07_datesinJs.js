@@ -1,3 +1,4 @@
+//Alternative lec. -> https://youtu.be/uCzMFtJ_QVg?si=WTfxtgHld13xAdmA
 // Dates
 
 let myDate = new Date()
