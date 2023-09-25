@@ -34,5 +34,6 @@ JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
+console.log(JsUser.greeting); //this will return function as it is, doesnot execute, bs code dedega function ka
+console.log(JsUser.greeting()); // this will first return code of that function, and due to () it will also execute it
 console.log(JsUser.greetingTwo());
