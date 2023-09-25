@@ -1,6 +1,12 @@
+
+//this is SINGLETON object way
 // const tinderUser = new Object()
+
+//this is using normal literal way
 const tinderUser = {}
 
+
+//both singleton and normal literal way works same
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
@@ -24,11 +30,12 @@ const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
 // const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = Object.assign({}, obj1, obj2, obj4)  //Object.assign(target,source,source) ->read syntax MDN
 
 const obj3 = {...obj1, ...obj2}
 // console.log(obj3);
 
+//... is called SPREAD operater, which is used in arrays and objects unification
 
 const users = [
     {
@@ -63,11 +70,14 @@ const course = {
 
 // course.courseInstructor
 
-const {courseInstructor: instructor} = course
+const {courseInstructor: instructor} = course //De-Structuring of object
+//this is used in react, so study it properly
 
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+//JSON object, returned through API
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
