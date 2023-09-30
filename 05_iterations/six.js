@@ -1,3 +1,7 @@
+//forEach vs filter
+//forEach doesnot returns
+//filter returns, used for checking condition if true then return
+
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 
