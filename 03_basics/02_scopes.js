@@ -1,3 +1,5 @@
+//Tip- Chota bacha, bade uncle se ice cream maang skta hai, but bade uncle chote bache se nhi
+
 //var c = 300
 let a = 300
 if (true) {
@@ -43,7 +45,7 @@ if (true) {
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
+//Concept used is HOISTING
 console.log(addone(5))
 
 function addone(num){

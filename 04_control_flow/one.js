@@ -8,6 +8,10 @@ const temperature = 41
 //     console.log("temperature is greater than 50");
 // }
 
+
+//== vs ===
+//=== is used for strict checking, compares value and datatype eg 2==="2" false
+//== normal checking, compares only value. eg : 2=="2" true
 // console.log("Execute");
 // <, >, <=, >=, ==, !=, ===, !==
 

@@ -1,3 +1,7 @@
+// this keyword
+// this in browser gives window object(which are extra funcs provided by browser)
+// this in node(js engine) gives empty object {}
+
 const user = {
     username: "hitesh",
     price: 999,
@@ -42,6 +46,10 @@ const chai =  () => {
 // const addTwo = (num1, num2) =>  num1 + num2
 
 // const addTwo = (num1, num2) => ( num1 + num2 )
+
+//only for arrow function
+// {} curly braces mein return likhna pdega
+// () brackets mein return likhne ki zrurat nhi, reactjs mein use hoga
 
 const addTwo = (num1, num2) => ({username: "hitesh"})
 
