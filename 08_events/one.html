@@ -1,3 +1,4 @@
+<!-- Verry Important for Interviews!! -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +27,17 @@
      // attachEvent()
     // jQuery - on
 
-    // type, timestamp, defaultPrevented
+    // type, timestamp, defaultPrevented , preventDefault()
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
+
+
+    //Bubbling event, when clicked, andar wala pehle chalega, fir bahar wala element ka event chalega
+    //this happens when false(which is default)
+
+    //But sometimes we dont want bubbling, inner wale pr event chale but bahar wala normal reh jaye,
+    //then use stopPropagation() on inner element event, shown below.
 
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
@@ -46,7 +54,7 @@
     //     console.log("google clicked");
     // }, false)
    
-    
+    //project-img pr click kro, and gayab hojae vo
     document.querySelector('#images').addEventListener('click', function(e){
         console.log(e.target.tagName);
         if (e.target.tagName === 'IMG') {
