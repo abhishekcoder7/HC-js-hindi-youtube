@@ -41,3 +41,17 @@ console.timeEnd()
 console.time()
 console.log(efficient(2))
 console.timeEnd()
+
+
+//LEETCODE MEMO QUES
+function memoize(fn) {
+    let cache={}
+    return function(...args) {
+        let str = JSON.stringify(args);
+        if(str in cache) return cache[str];
+        else{
+            cache[str]=fn(...args);
+            return cache[str];
+        }
+    }
+}
